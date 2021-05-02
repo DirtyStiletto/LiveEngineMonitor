@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>newmain.qml</file>
+        <file>png/pfeilgruen.png</file>
+        <file>png/pfeilrot.png</file>
+        <file>png/frame.png</file>
+        <file>png/redframe.png</file>
+        <file>png/redring.png</file>
+        <file>png/bluering.png</file>
+        <file>png/grid70.png</file>
+        <file>png/l2eye.png</file>
+        <file>png/wireframe.png</file>
+        <file>png/platte01.png</file>
+        <file>png/lem.png</file>
+        <file>png/lemrot.png</file>
+    </qresource>
+</RCC>  
