@@ -1,0 +1,37 @@
+FROM --platform=linux/arm torizon/qt5-wayland:2
+
+# GDB-remote (we can use any port there)
+EXPOSE 6502
+
+
+
+ARG SSHUSERNAME=torizon
+
+
+# Make sure we don't get notifications we can't answer during building.
+ENV DEBIAN_FRONTEND="noninteractive"
+
+
+
+# commands that should be run before installing packages (ex: to add a feed or keys)
+
+
+# your regular RUN statements here
+# Install required packages
+RUN apt-get -q -y update \
+    && apt-get -q -y install \
+    gdbserver \
+    procps \
+    qml-module-qtquick2 qml-module-qtquick-window2\
+    && rm -rf /var/lib/apt/lists/*
+
+
+
+
+
+
+USER torizon
+
+WORKDIR /delete01
+
+CMD stdbuf -oL -eL gdbserver 0.0.0.0:6502 /delete01/delete01 

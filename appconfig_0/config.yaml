@@ -1,0 +1,124 @@
+devices:
+    common: []
+    debug: []
+    release: []
+dockercomposefile:
+    common: ''
+    debug: ''
+    release: ''
+extraparms:
+    common: {}
+    debug: {}
+    release: {}
+id: e69d6a8f-ccbd-4d5f-ae7d-74ec18f8fbb7
+images:
+    debug: sha256:2520bd5d6608fd0a7a0c91048787a4c304eee46bb18889efaefc0c6294db6ae8
+    release: ''
+modificationdate: '2021-04-09T15:45:21.492912'
+networks:
+    common: []
+    debug: []
+    release: []
+platformid: arm32v7-qt5-wayland-no-ssh_bullseye
+ports:
+    common: {}
+    debug: {}
+    release: {}
+privatekey: '-----BEGIN RSA PRIVATE KEY-----
+
+    MIIEowIBAAKCAQEA6RPxWbDTvEMmBn3A+AkWaxxK7Bs9S2orRYQRx24BJsr4G1eT
+
+    /jFkacIWqKvfeFUVYtt3PTTj1x2tX2eRQObonBGexKDm8Is1qWNzP/wvInHEoWqr
+
+    oWWAniZ4a/CI/rrreuxDX0cTFy7m2P+qrIUTpzD1e9MEgCQ0jtXXYD1alNZNlj0Y
+
+    7FI8Eb5g7/WN4vB1xsopBmP8i13evrE+nnknC3FbHRKvhgjGfDtLRDbciCngy5qr
+
+    RtuE9HOmRTbGT4iz1KetquVxoKz1yVV789wXNCWqCARwuWiWUywHOGfVhno+86mF
+
+    eRiiovuPF3JzsO2ofx3yDykZSnQVSE4dvNCvEwIDAQABAoIBACSfx5rqWDsK6hy3
+
+    Ae13sBggl/1FwnnpMud3ezu1I2UvG5FgT5bvt/GOV/UlHLZR2ExyY+gwOWUB+s40
+
+    /fQO1JpBgosvJVrC5Sm6wM9bFyT4b4dVtaZkxrMTJHUBlOVCBeKI4YVFK9DGw+tx
+
+    MSZuusnYvZo5bEmeZsvS+kbbHTKptTtt6PqOuMfpv5W1QTn7l4l7FuKXU46s9hkx
+
+    THBlalPNi2XdYaWOr6U8DmIkxKiBxt29+rOyoVMIqzZKMOkNfLbj8mqtKuEphoTb
+
+    mZUtycGahUoeB5MSvysOsehVR8jYJ0p4CrX/0b2/pQYeJFTMlU1BZ+3wWt7nLrKf
+
+    fJGn1QECgYEA+P/MD2CUt6856dpopp6KxHzwfNxLkZqISjkIZX/waZLQBofsmtJA
+
+    o9EwirHm7o0LO8Gcv4ldSt/eDcVRW5TEC+MwciqUHzxUQ/v7oq5ZZ7jhCsq8Je42
+
+    8XwYwInpBF9y3De/P65XEmf0/KGNbL3ekWUe1fWuJp7tVeGthX6TXEECgYEA76GM
+
+    0dmB3xro6KeNbVOwrge1kV/JNnAmc+csHSRBYFGBSCruTxkZfply+LLZYYtkRBmh
+
+    1NP7feeW4dwwNpgBUXk68PU3R8s0KNGGPH11lhctlIi43L1Qg1W2ISscH4FrHg62
+
+    fIfr4VT+cuUvZQsAH1vbFY2Qzcwj6twOvbPQRlMCgYB++ouIp/sPNRe2jv/hQGaJ
+
+    zyEgu4L6DLFGEJGcmULzw7+8JOLfDSuTnuE/SXv32QuKfLC/6IAf58wof6B+sH3N
+
+    hh01i0sgJrbeOIlZq8nCIED7LOoH+dQhD+TbgzjGVxqO/QrVocWbiFIh5wzlEGqJ
+
+    AOVZvUEDRvbHXiAMPMFPQQKBgQC59Gqb2icvI+nDyWo1gbFki3T52BQD26nrXWRd
+
+    ROo6vWUOxMnjtb2UAa43kkqgqJPpSN7NkqbhwFrU8JK1euXi/KmhnRkF7ImQd2+s
+
+    90rNazUiw6p5GawmDthkCtkrFbozPAWew7dnSBagwHsz9QJmU1jC8/V/zj+9HIGP
+
+    8r7YIwKBgDhs7rxDDQTpREoFAPn3QzW1CGpSHFzqrDTChL85ySaoACYZh+xCOHsj
+
+    aMCpXHCERXREvcC7vHIRVhqYJHeHvuLVqg+4wTkSSUwqYI89+VXqU7+Ims5HdFW+
+
+    +wRoUPkShxAo8ek1hnJxtfthsLOpFOm0OZHMiAs+qPYKL/5VnBB0
+
+    -----END RSA PRIVATE KEY-----
+
+    '
+props:
+    common:
+        appname: delete01
+        arg: ''
+        buildcommands: ''
+        buildfiles: ''
+        command: ''
+        devpackages: qtdeclarative5-dev:#%platform.debian-arch%# libegl-dev:#%platform.debian-arch%#
+            libgl-dev:#%platform.debian-arch%#
+        env: ''
+        exename: delete01
+        expose: ''
+        extrapackages: qml-module-qtquick2 qml-module-qtquick-window2
+        language: c-cpp-nossh
+        preinstallcommands: ''
+        sdkpostinstallcommands: ''
+        sdkpreinstallcommands: ''
+        targetcommands: ''
+        targetfiles: ''
+    debug:
+        arg: 'ARG SSHUSERNAME=#%application.username%#
+
+            '
+    release: {}
+publickey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDpE/FZsNO8QyYGfcD4CRZrHErsGz1LaitFhBHHbgEmyvgbV5P+MWRpwhaoq994VRVi23c9NOPXHa1fZ5FA5uicEZ7EoObwizWpY3M//C8iccShaquhZYCeJnhr8Ij+uut67ENfRxMXLubY/6qshROnMPV70wSAJDSO1ddgPVqU1k2WPRjsUjwRvmDv9Y3i8HXGyikGY/yLXd6+sT6eeScLcVsdEq+GCMZ8O0tENtyIKeDLmqtG24T0c6ZFNsZPiLPUp62q5XGgrPXJVXvz3Bc0JaoIBHC5aJZTLAc4Z9WGej7zqYV5GKKi+48XcnOw7ah/HfIPKRlKdBVITh280K8T
+sdkimages:
+    debug: sha256:2f2c79170146bec06a48c49c1d1f37f5f8018c78aa059a79de00519776775c7d
+    release: ''
+sdksshaddress: null
+shutdownscript:
+    common: ''
+    debug: ''
+    release: ''
+startupscript:
+    common: ''
+    debug: ''
+    release: ''
+username: torizon
+volumes:
+    common: {}
+    debug:
+        /home/torizon/delete01: /delete01,rw
+    release: {}
